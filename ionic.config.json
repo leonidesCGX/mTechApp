@@ -1,0 +1,7 @@
+{
+  "name": "mTechApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

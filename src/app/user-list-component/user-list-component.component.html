@@ -1,5 +1,5 @@
 <ion-content>
-  <ion-list>
+  <ion-list *ngIf="!isLoading">
     <ion-item *ngFor="let user of users">
       <ion-label>
         <h2>{{ user.name }}</h2>
@@ -7,4 +7,6 @@
       </ion-label>
     </ion-item>
   </ion-list>
+  <ion-spinner *ngIf="isLoading"></ion-spinner>
+  <p *ngIf="!isLoading && users.length === 0">No users found.</p>
 </ion-content>
